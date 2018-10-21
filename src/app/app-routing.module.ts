@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
 import { ArticleListComponent } from './article-list/article-list.component';
-import { childRoutes } from './article-list/article-list.routing';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { CategoryComponent } from './category/category.component';
 
 export const routes: Routes = [
-    {path: '', redirectTo: '/article-list', pathMatch: 'full'},
-    {path: 'article-list', component: ArticleListComponent},
-    {path: 'article-list/:id', component: ArticleDetailComponent}
+    {path: '', redirectTo: '/home', pathMatch: 'full'},
+    {path: 'home', component: ArticleListComponent},
+    {path: 'article-list/:article-id', component: ArticleDetailComponent},
+    {path: 'category/:category-id', component: CategoryComponent}
 ];

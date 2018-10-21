@@ -1,9 +1,3 @@
 <aside id="main-aside">
-  <blockquote>HTML</blockquote>
-  <blockquote>JavaScript</blockquote>
-  <blockquote>CSS</blockquote>
-  <blockquote>Angular</blockquote>
-  <blockquote>Java</blockquote>
-  <blockquote>Python</blockquote>
-  <blockquote>DataBase</blockquote>
+  <blockquote *ngFor='let category of categories' [routerLink]="['/category', category.id]">{{category.name}}</blockquote>
 </aside>

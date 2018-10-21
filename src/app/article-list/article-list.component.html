@@ -1,1 +1,8 @@
-<luxun-article [info]="article" *ngFor="let article of articles"></luxun-article>
+<div *ngIf="articles">
+    <div *ngIf="!articles.length">
+        Sorry, no article here.
+    </div>
+    <div *ngIf="articles.length">
+        <luxun-article [info]="article" *ngFor="let article of articles"></luxun-article>
+    </div>
+</div>

@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from "@angular/core";
 import { Router, ActivatedRoute } from "@angular/router";
 import { ArticleAgentService } from "../service/article-agent.service";
 import { ArticleEntity } from "../entity/article.entity";
+import { CommonApi } from "../api/common.api";
 
 @Component({
     selector: 'luxun-article-detail',
@@ -60,14 +61,9 @@ export class ArticleDetailComponent implements OnInit {
 
     public ngOnInit(): void {
         this.info = this.agent.getArticles(this.parseArticleId());
-        console.info(this.info.content)
     }
 
     private parseArticleId(): number {
-        let id = 0;
-        this.activatedRoute.params.subscribe(params => {
-            id = parseInt(params['id'])
-        });
-        return id;
+        return parseInt(CommonApi.parseParam(this.router, this.activatedRoute, 'article-id'));
     }
 }

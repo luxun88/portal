@@ -16,6 +16,7 @@ import { LuxunMainAsideComponent } from './framework/luxun-main-aside/luxun-main
 import { LuxunMainMenuComponent } from './framework/luxun-main-menu/luxun-main-menu.component';
 import { LuxunMainSectionComponent } from './framework/luxun-main-section/luxun-main-section.component';
 import { ArticleAgentService } from './service/article-agent.service';
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ArticleAgentService } from './service/article-agent.service';
     LuxunMainContainerComponent,
     LuxunMainAsideComponent,
     LuxunMainMenuComponent,
-    LuxunMainSectionComponent
+    LuxunMainSectionComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
