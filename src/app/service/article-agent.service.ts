@@ -106,6 +106,6 @@ public void testArraysAsList()
     }
 
     public getArticles(id: number): ArticleEntity {
-        return this.articles.find(e => e.id == id);
+        return this.articles.find(e => e.id === id);
     }
 }

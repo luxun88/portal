@@ -66,7 +66,7 @@ export class ArticleDetailComponent implements OnInit {
     private parseArticleId(): number {
         let id = 0;
         this.activatedRoute.params.subscribe(params => {
-            id = params['id']
+            id = parseInt(params['id'])
         });
         return id;
     }
