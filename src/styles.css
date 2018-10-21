@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px;
+}
+
+body{
+    /* text-align: center; */
+    width: 100%;
+    background-color: #F5F5F5;
+    display: -moz-box;
+    /* display: -webkit-box; */
+
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+}
+
+h1{
+    font: bold 20px verdana, sans-serif;
+}
+
+h2{
+    font: bold 14px verdana, sans-serif;
+}
+
+header, section, footer, aside, nav, article, figure, figcation, hgroup{
+    display: block;
+}
+
+article{
+    background: white;
+    border: 1px solid white;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+article footer{
+    text-align: right;
+}
+
+time{
+    color: #999999;
+    font-size: small;
+}
+
+figcaption{
+    font: italic 14px verdana, sans-serif;
+}
+
+#main-wrapper{
+    /* width: 960px;
+    margin: 15px auto;
+    text-align: left; */
+    max-width: 100%;
+    margin: 15px 15px 15px 15px;
+
+    display: -moz-box;
+    display: -webkit-box;
+
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+}
+
+#main-container{
+    display: -moz-box;
+    display: -webkit-box;
+
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+}
+
+#main-header{
+    background: white;
+    /* border: 1px solid #999999; */
+    padding: 6px;
+    border-bottom: 2px solid #999999
+}
+
+#main-header-portal{
+    background: white;
+    font-size: 16px;
+    padding: 6px;
+    border-bottom: 1px dashed #999999
+}
+
+.javaexception{
+    color: red;
+}
+
+.javacode{
+    color: blue;
+    white-space: normal;
+}
+
+pre {
+	white-space: pre-wrap; /*css-3*/
+	white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+	white-space: -pre-wrap; /*Opera4-6*/
+	white-space: -o-pre-wrap; /*Opera7*/
+	word-wrap: break-word; /*InternetExplorer5.5+*/
+}
+
+
+#top-header{
+    background: #4D4D4D;
+    color: white;
+    height: 60px;
+    padding: 30px 50px 10px;
+}
+
+#main-menu{
+    background: white;
+    padding: 5px 15px;
+}
+
+#main-menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+}
+
+#main-footer{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #999999
+}
+
+a:link {color: blue; text-decoration:none;} 
+a:active{color: red; } 
+a:visited {color:purple;text-decoration:none;} 
+a:hover {color: red; text-decoration:underline;} 

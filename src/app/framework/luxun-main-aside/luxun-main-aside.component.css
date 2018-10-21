@@ -1,0 +1,12 @@
+#main-aside{
+    /* float: left;
+    width: 220px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: #CCCCCC; */
+    float: right;
+    width: 220px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: white;
+}

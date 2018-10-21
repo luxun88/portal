@@ -1,0 +1,9 @@
+#main-section{
+    float: left;
+    width: 960px;
+    margin: 20px;
+
+    /* -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    margin: 20px; */
+}
